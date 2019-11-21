@@ -70,7 +70,7 @@ class _ImageUploadState extends State<ImageUpload> {
 
     var request = new http.MultipartRequest("POST", uri);
 
-    var multipartFile = new http.MultipartFile("avatar", stream, length,
+    var multipartFile = new http.MultipartFile("image", stream, length,
         filename: basename(_image.path));
     request.files.add(multipartFile);
 
